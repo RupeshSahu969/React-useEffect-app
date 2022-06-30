@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import { useState } from 'react';
+import Todo from './components/Todo';
+import FormTable from './components/FormTable';
+import Table from './components/Table';
 
 function App() {
+
+// const [count1,setCount1] =useState(0);
+// const [count2,setCount2] =useState(0);
+
+// fetch("https://localhost:8080/todos")
+// .then((r) => r.json())
+// .then((d) => {
+//   console.log(d)
+// })
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<div className="App">
+<FormTable/>
+<Table/>
+<Todo/>
     </div>
+
+    
   );
 }
 
